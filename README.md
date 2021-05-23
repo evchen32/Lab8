@@ -15,5 +15,14 @@ Yes, because we are debugging on a small scale without many moving parts by just
 
 4. What do you expect to happen if we run our puppeteer tests with the field “headless” set to true?
 
+We won't be able to see how Puppeteer drives our browser.
+
 5. What would your beforeAll callback look like if you wanted to start from the settings page before every test case?
 
+```javascript
+beforeAll(async () => {
+    await page.goto('http://127.0.0.1:5500');
+    await page.click('img',{alt: 'settings'});
+    await page.waitForTimeout(500);  
+});
+```
