@@ -1,6 +1,8 @@
 # Lab8_Starter
 
 ## Check your understanding q's (FILL OUT)
+Name: Evan Chen
+
 1. In your own words: Where would you fit your automated tests in your Bujo project development pipeline? (just write the letter)
 
 One
@@ -26,3 +28,6 @@ beforeAll(async () => {
     await page.waitForTimeout(500);  
 });
 ```
+
+Screenshot of all my tests:
+![screenshot](./npm%20test%20screenshot.png)
